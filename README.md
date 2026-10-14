@@ -35,6 +35,18 @@ SQL · Excel · Power BI · DAX · a documented data-reconciliation log. *Synthe
 
 ---
 
+## Errors I caught in my own work before publishing
+
+| Project | What looked true | What the check showed |
+|---|---|---|
+| NYC 311 | Tickets closed on the caller's word re-file more often | A complaint-type mix effect. Within the same type it disappeared, so I dropped the claim |
+| UK Retail | 423 at-risk customers | Re-running gave 423, 381, 382: ties were split at random. Fixed the scoring; the stable answer is 421 |
+| SaaS | 281 vs 287 active customers looked like a data error | Two valid definitions (start vs end of month). Rebuilt the monthly table from the customer file: all 48 months match |
+
+Details: [NYC AI log](https://github.com/Muhammad-Amjad-DA/nyc-311-closed-vs-resolved/blob/main/docs/ai_log.md) · [UK AI log](https://github.com/Muhammad-Amjad-DA/uk-retail-leakage-retention/blob/main/docs/ai_log.md) · [SaaS reconciliation log](https://github.com/Muhammad-Amjad-DA/saas-revenue-churn-analysis/blob/main/docs/data_reconciliation.md)
+
+---
+
 ## How I work
 
 1. **Business question first**: who is asking, and which decision changes?
@@ -42,7 +54,7 @@ SQL · Excel · Power BI · DAX · a documented data-reconciliation log. *Synthe
 3. **Tie out**: key numbers are checked by SQL tests before I trust them.
 4. **Recommend**: findings end in an action, a rough impact range and a Limitations section.
 
-AI is a tool I use for drafting code and text. Each project has an AI log of what it got wrong and what I corrected.
+AI is a tool I use for drafting code and text. I check its output the same way I check mine.
 
 ---
 
