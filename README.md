@@ -65,7 +65,4 @@ AI is a tool I use for drafting code and text. I check its output the same way I
 ---
 
 ## Contact
-
-**Email:** [amjadiradat786@gmail.com](mailto:amjadiradat786@gmail.com) · Karachi, Pakistan (UTC+5), open to remote roles
-
-*B.S. Information Technology, Sir Syed University of Engineering and Technology (expected 2027).*
+Pakistan (UTC+5), open to remote roles
